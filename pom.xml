@@ -38,11 +38,11 @@
     </repositories>
 
     <dependencies>
-        <!-- API de PaperMC -->
+        <!-- API de PaperMC 1.20.4 (Mantiene compatibilidad con los métodos viejos del código) -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -54,7 +54,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Métricas bStats (Librería que faltaba) -->
+        <!-- Métricas bStats -->
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
