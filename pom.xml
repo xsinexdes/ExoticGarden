@@ -38,7 +38,7 @@
     </repositories>
 
     <dependencies>
-        <!-- API de PaperMC para versión 1.21.1 -->
+        <!-- API de PaperMC -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -53,6 +53,14 @@
             <version>master-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Métricas bStats (Librería que faltaba) -->
+        <dependency>
+            <groupId>org.bstats</groupId>
+            <artifactId>bstats-bukkit</artifactId>
+            <version>3.0.2</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -61,7 +69,7 @@
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <resources>
-            <!-- Copia archivos de texto aplicando filtrado -->
+            <!-- Archivos de texto con filtrado -->
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <filtering>true</filtering>
@@ -70,7 +78,7 @@
                     <include>config.yml</include>
                 </includes>
             </resource>
-            <!-- Copia archivos binarios (schematics) SIN filtrado -->
+            <!-- Archivos binarios (schematics) sin filtrado -->
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <filtering>false</filtering>
