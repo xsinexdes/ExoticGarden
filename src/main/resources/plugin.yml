@@ -1,11 +1,11 @@
-name: ExoticGarden
+name: SlimeHUD
 version: ${project.version}
-author: TheBusyBiscuit
-description: A Slimefun Addon that adds new Plants and dishes to the game
-website: https://github.com/TheBusyBiscuit/ExoticGarden
+author: TuNombre
+description: Un addon de Slimefun para mostrar un HUD interactivo.
+website: https://github.com/TuUsuario/SlimeHUD
 
-api-version: '1.13'
-main: io.github.thebusybiscuit.exoticgarden.ExoticGarden
+api-version: '1.20'
+main: tu.paquete.principal.SlimeHUD
 
 depend:
-- Slimefun
+  - Slimefun
