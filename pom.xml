@@ -61,9 +61,23 @@
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <resources>
+            <!-- Copia archivos de texto aplicando filtrado -->
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <filtering>true</filtering>
+                <includes>
+                    <include>plugin.yml</include>
+                    <include>config.yml</include>
+                </includes>
+            </resource>
+            <!-- Copia archivos binarios (schematics) SIN filtrado -->
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>plugin.yml</exclude>
+                    <exclude>config.yml</exclude>
+                </excludes>
             </resource>
         </resources>
 
